@@ -1,0 +1,30 @@
+/*
+Theme Name: Portfolio
+Author: Plamen Kolarov
+Description: This is my personal portfolio project
+Tags: portfolio
+*/
+
+@import 'bootstrap.min';
+@import 'reset';
+@import 'fontawesome.min';
+@import 'fonts';
+@import 'functions';
+@import 'header';
+@import 'about';
+@import 'services';
+@import 'history';
+@import 'skills';
+@import 'form';
+
+
+.container-fluid {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.clear:after {
+    content: '';
+    display: block;
+    clear: both;
+}

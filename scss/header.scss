@@ -1,0 +1,197 @@
+header {
+    min-height: 600px;
+    background: url('img/bg.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+
+    .overlay-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.83);
+        z-index: 0;
+    }
+
+    .portrait-frame {
+        width: 250px;
+        height: 250px;
+        border-radius: 250px;
+        box-sizing: content-box;
+        background: #fff;
+        margin: 100px auto 15px auto;
+        overflow: hidden;      
+        border: 3px solid #fff;
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .details-wrap {
+        margin-bottom: 50px;
+
+        .details-wrap--name {
+            font-size: 4.5em;
+            font-family: 'source_sans_prosemibold';
+            color: #fff;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .details-wrap--title {
+            font-size: 2.25em;
+            font-family: 'source_sans_prosemibold';
+            color: #fff;
+            text-align: center;
+        }
+    }
+
+    .contact-wrap {
+        text-align: center;
+        margin: 50px;
+
+        .contact-wrap--link {
+            display: inline-block;
+            text-decoration: none;
+            outline: none;
+            padding: 0 40px;
+            color: #fff;
+            background: #00b4d9;
+            transition: 0.3s;
+            border-radius: 4px;
+            text-transform: uppercase;
+            font-family: 'source_sans_proregular';
+            height: 45px;
+            line-height: 53px;
+            
+            &:hover {
+                background: #21cff3;
+            }
+        }
+        
+    }
+
+    
+}
+
+
+#logo {
+    float: left;
+    margin-top: 15px;
+    
+}
+
+#main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: #fff;
+    min-height: 50px;
+    box-shadow: 0 3px 6px 3px rgba(0,0,0,.06);
+
+    ul {
+        float: right;
+
+        li {
+            float: left;
+
+            a {
+                display: inline-block;
+                text-decoration: none;
+                outline: none;
+                font-size: 13px;
+                font-family: 'source_sans_probold';
+                color: #222; 
+                text-transform: uppercase;
+                padding: 25px 15px;
+                letter-spacing: 1px;
+                transition: 0.3s;
+                font-weight: bold;
+            }
+
+            &:hover {
+                a {
+                    color: #00b4d9;
+                }
+            }
+        }
+
+        li.active {
+            a {
+                color: #00b4d9;
+            }
+        }
+    }
+}
+
+// Social Icons
+.social-icons-wrap {
+    text-align: center;
+
+    .social-icons-wrap--icon-link {
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        border-radius: 35px;
+        background: #fff;
+        color: #333;
+        text-decoration: none;
+        outline: none;
+        margin: 0 10px;
+        line-height: 35px;
+        transition: 0.3s;
+    }
+
+    .social-icons-wrap--icon-link.facebook {
+        &:hover {
+            color: #fff;
+            background: #3b5999;
+        }
+    }
+
+    .social-icons-wrap--icon-link.google {
+        &:hover {
+            color: #fff;
+            background: #ce332a;
+        }
+    }
+
+    .social-icons-wrap--icon-link.linkedin {
+        &:hover {
+            color: #fff;
+            background: #1260a2;
+        }
+    }
+
+    .social-icons-wrap--icon-link.github {
+        &:hover {
+            color: #fff;
+            background: #000;
+        }
+    }    
+}
+
+// Scroll Top button
+.scroll-top {
+    display: none;
+    position: fixed;
+    bottom: 17px;
+    right: 17px;
+    width: 40px;
+    height: 40px;
+    background: #00b4d9;
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: center;
+
+    svg {
+        height: 40px;
+        color: #fff;
+    }
+}

@@ -1,0 +1,30 @@
+$primary-color: #00b4d9;
+
+@mixin transition($sec) {
+    -webkit-transition: $sec;
+       -moz-transition: $sec;
+        -ms-transition: $sec;
+            transition: $sec;
+}
+
+@mixin border-radius($radius) {
+-webkit-border-radius: $radius;
+   -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+        border-radius: $radius;
+}
+
+@mixin translate-2d($x, $y) {
+-webkit-transform: translate($x, $y);
+   -moz-transform: translate($x, $y);
+    -ms-transform: translate($x, $y);
+        transform: translate($x, $y);
+}
+
+@mixin box-shadow($x, $y, $blur, $spread) {
+-webkit-box-shadow: $x $y $blur $spread rgba(0,0,0,0.3);
+   -moz-box-shadow: $x $y $blur $spread rgba(0,0,0,0.3);
+    -ms-box-shadow: $x $y $blur $spread rgba(0,0,0,0.3);
+        box-shadow: $x $y $blur $spread rgba(0,0,0,0.3);
+}
+

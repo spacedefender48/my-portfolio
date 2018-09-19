@@ -1,0 +1,86 @@
+.history-sec {
+    padding: 60px 0;
+
+    .history-wrap {
+        border-left: 2px solid #f2f2f2;
+        position: relative;
+        padding-top: 60px;
+        padding-left: 30px;
+        margin-bottom: 30px;
+    
+        .title-wrap {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+    
+            .title-wrap--icon {
+                float: left;
+                width: 50px;
+                height: 50px;
+                border-radius: 50px;
+                background: $primary-color;
+                position: relative;
+                top: 0;
+                left: -25px;
+            }
+    
+            .title-wrap--text {
+                float: left;
+                line-height: 50px;
+                text-transform: uppercase;
+                color: #666;
+                font-size: 20px;
+                font-family: 'source_sans_probold';
+            }
+    
+            &:after {
+                content: '';
+                display: block;
+                clear: both;
+            }
+        }
+    
+        .post-wrap {
+            background: #f2f2f2;
+            padding: 20px;
+            margin-bottom: 20px;
+            position: relative;
+            border-radius: 2px;
+    
+            .post-wrap--title {
+                color: #666;
+                font-size: 16px;
+                font-family: 'source_sans_probold';
+                margin-bottom: 20px;
+            }
+    
+            .post-wrap--date {
+                color: #888;
+                font-size: 14px;
+                font-family: 'source_sans_prolight';
+                margin-bottom: 20px;
+            }
+
+            .post-wrap--desc {
+                color: #888;
+                font-size: 14px;
+                line-height: 18px;
+                font-family: 'source_sans_prolight';
+            }
+    
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 20px;
+                left: -35px;
+                width: 8px;
+                height: 8px;
+                background: #fff;
+                border-radius: 100px;
+                border: 2px solid $primary-color;
+            }
+        }
+    }
+    
+}
