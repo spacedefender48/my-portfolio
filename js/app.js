@@ -7,6 +7,18 @@
         var $scroll_btn = $('.scroll-top');
         var $header_list_items = $('#main-nav ul li');
 
+
+        $("a[href^='#']").click(function(e) {
+            e.preventDefault();
+               
+            var position = $($(this).attr("href")).offset().top;
+           
+            $("body, html").animate({
+                scrollTop: (position - 50)
+            }, 500 );
+
+        });
+
         $scroll_btn.on('click', function () {
             $body.animate({ scrollTop: 0 }, 500);
         });
@@ -37,7 +49,7 @@
         }
 
         $win.on('resize scroll', function () {
-            console.log($win.scrollTop());
+            // console.log($win.scrollTop());
             calculateScrollTop();
             check_if_in_view();
             change_active_header_item();
