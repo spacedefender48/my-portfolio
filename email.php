@@ -5,6 +5,8 @@
     $body = $_POST['f_message'];
     $to_email = 'spacedefender48@gmail.com';
 
+    
+
     // Test functions and send data back to JS. Comment the rest 
     $result = "The sender's email is: " . $from_email;
     echo json_encode($result);
