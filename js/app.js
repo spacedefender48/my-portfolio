@@ -7,6 +7,7 @@
         var $scroll_btn = $('.scroll-top');
         var $header_list_items = $('#main-nav ul li');
         var $scroll_down_btn = $('#scroll-down-btn');
+        var $main_nav = $('#main-nav');
 
 
         // Smooth scroll for navigation links
@@ -26,7 +27,7 @@
             var about_me_position = $('#about-sec').offset().top;
 
             $body.animate({
-                scrollTop: (about_me_position - 50)
+                scrollTop: (about_me_position - 30)
             }, 500);
         });
 
@@ -61,11 +62,24 @@
             
         }
 
+        function change_navigation_size() {
+            var about_me_position = $('#about-sec').offset().top;
+            var window_scroll = $win.scrollTop();
+
+            if (window_scroll >= (about_me_position - 30)) {
+                $main_nav.addClass('small');
+            } else {
+                $main_nav.removeClass('small');
+            }
+
+        }
+
         $win.on('resize scroll', function () {
             // console.log($win.scrollTop());
             calculateScrollTop();
             check_if_in_view();
             change_active_header_item();
+            change_navigation_size();
         });
 
         

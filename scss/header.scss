@@ -87,7 +87,12 @@ header {
 #logo {
     float: left;
     margin-top: 15px;
-    
+    @include transition(0.3s);
+
+    img {
+        width: 100%;
+        @include transition(0.3s);
+    }
 }
 
 #main-nav {
@@ -97,8 +102,9 @@ header {
     width: 100%;
     z-index: 999;
     background: #fff;
-    min-height: 50px;
+    // min-height: 50px;
     box-shadow: 0 3px 6px 3px rgba(0,0,0,.06);
+    @include transition(0.3s);
 
     ul {
         float: right;
@@ -131,6 +137,24 @@ header {
             a {
                 color: #00b4d9;
             }
+        }
+    }
+}
+
+#main-nav.small {
+    ul {
+        li {
+            a {
+                padding: 10px 15px;
+            }
+        }
+    }
+
+    #logo {
+        margin-top: 5px;
+    
+        img {
+            width: 70%;
         }
     }
 }
