@@ -61,7 +61,7 @@
 
             
         }
-
+  
         function change_navigation_size() {
             var about_me_position = $('#about-sec').offset().top;
             var window_scroll = $win.scrollTop();
