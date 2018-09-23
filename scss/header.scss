@@ -3,6 +3,7 @@ header {
     background: url('img/bg.jpg') no-repeat center center;
     background-size: cover;
     position: relative;
+    padding-bottom: 20px;
 
     .overlay-background {
         position: absolute;
@@ -14,37 +15,29 @@ header {
         z-index: 0;
     }
 
-    .portrait-frame {
-        width: 250px;
-        height: 250px;
-        border-radius: 250px;
-        box-sizing: content-box;
-        background: #fff;
-        margin: 100px auto 15px auto;
-        overflow: hidden;      
-        border: 3px solid #fff;
-
-        img {
-            display: block;
-            width: 100%;
-            height: auto;
-        }
-    }
-
     .details-wrap {
-        margin-bottom: 50px;
+        margin: 100px 0 40px;
 
-        .details-wrap--name {
-            font-size: 4.5em;
-            font-family: 'source_sans_prosemibold';
+        .details-wrap--intro {
+            font-size: 3.125em;
+            font-family: 'shadows_into_lightregular';
             color: #fff;
             text-align: center;
-            margin-bottom: 15px;
+            margin-bottom: 40px;
+        }
+
+        .details-wrap--name {
+            font-size: 5em;
+            font-family: 'source_sans_prosemibold';
+            color: #fff;
+            letter-spacing: 3px;
+            text-align: center;
+            margin-bottom: 5px;
         }
 
         .details-wrap--title {
             font-size: 2.25em;
-            font-family: 'source_sans_prosemibold';
+            font-family: 'shadows_into_lightregular';
             color: #fff;
             text-align: center;
         }
@@ -52,7 +45,8 @@ header {
 
     .contact-wrap {
         text-align: center;
-        margin: 50px;
+        margin: 50px 0 75px;
+        
 
         .contact-wrap--link {
             display: inline-block;
@@ -73,6 +67,17 @@ header {
             }
         }
         
+    }
+
+    .scroll-down-wrap {
+        border-radius: 20px;
+        text-align: center;
+        cursor: pointer;
+        margin: 0 auto;
+        width: 30px;
+        height: 30px;
+        padding-top: 5px;
+        color: #fff;
     }
 
     

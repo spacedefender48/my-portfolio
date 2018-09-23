@@ -6,19 +6,32 @@
     $doc.ready(function () {
         var $scroll_btn = $('.scroll-top');
         var $header_list_items = $('#main-nav ul li');
+        var $scroll_down_btn = $('#scroll-down-btn');
 
 
+        // Smooth scroll for navigation links
         $("a[href^='#']").click(function(e) {
             e.preventDefault();
                
             var position = $($(this).attr("href")).offset().top;
            
-            $("body, html").animate({
+            $body.animate({
                 scrollTop: (position - 50)
             }, 500 );
 
         });
 
+        // Scroll Down button
+        $scroll_down_btn.on('click', function(){
+            var about_me_position = $('#about-sec').offset().top;
+
+            $body.animate({
+                scrollTop: (about_me_position - 50)
+            }, 500);
+        });
+
+
+        // Scroll to Top button
         $scroll_btn.on('click', function () {
             $body.animate({ scrollTop: 0 }, 500);
         });

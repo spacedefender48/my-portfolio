@@ -57,13 +57,14 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="portrait-frame">
-                        <img src="<?php bloginfo('template_url') ?>/img/portrait.jpg" alt="Plamen's portrait">
-                    </div>
+                    <!-- <div class="portrait-frame">
+                        <img src="<?php //bloginfo('template_url') ?>/img/portrait.jpg" alt="Plamen's portrait">
+                    </div> -->
 
                     <div class="details-wrap">
+                        <p class="details-wrap--intro">Hi This is</p>
                         <h1 class="details-wrap--name">Plamen Kolarov</h1>
-                        <p class="details-wrap--title">Front-End Developer</p>
+                        <p class="details-wrap--title">Front-end Web Developer</p>
                     </div>
 
                     <div class="social-icons-wrap">
@@ -84,6 +85,10 @@
 
                     <div class="contact-wrap">
                         <a href="#" class="contact-wrap--link">Contact Me</a>
+                    </div>
+
+                    <div id="scroll-down-btn" class="scroll-down-wrap">
+                        <i class="fas fa-chevron-down"></i>
                     </div>
                 </div>
             </div>

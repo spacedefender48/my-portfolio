@@ -194,11 +194,11 @@
             </div>
         </div>
 
-        <div class="contact-wrap" id="contact-sec">
+        <div class="contact-form-wrap" id="contact-sec">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2 class="contact-wrap--title">Contact Form</h2>
+                        <h2 class="contact-form-wrap--title">Contact Form</h2>
                     </div>
                 </div>
 

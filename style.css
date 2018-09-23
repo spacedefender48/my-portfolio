@@ -8837,11 +8837,18 @@ table {
   src: url("fonts/source_sans_pro/sourcesanspro-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/source_sans_pro/sourcesanspro-bold-webfont.woff2") format("woff2"), url("fonts/source_sans_pro/sourcesanspro-bold-webfont.woff") format("woff"), url("fonts/source_sans_pro/sourcesanspro-bold-webfont.ttf") format("truetype"), url("fonts/source_sans_pro/sourcesanspro-bold-webfont.svg#source_sans_probold") format("svg");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'shadows_into_lightregular';
+  src: url("fonts/shadows_into_light/shadowsintolight-webfont.eot");
+  src: url("fonts/shadows_into_light/shadowsintolight-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/shadows_into_light/shadowsintolight-webfont.woff2") format("woff2"), url("fonts/shadows_into_light/shadowsintolight-webfont.woff") format("woff"), url("fonts/shadows_into_light/shadowsintolight-webfont.ttf") format("truetype"), url("fonts/shadows_into_light/shadowsintolight-webfont.svg#shadows_into_lightregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 header {
   min-height: 600px;
   background: url("img/bg.jpg") no-repeat center center;
   background-size: cover;
-  position: relative; }
+  position: relative;
+  padding-bottom: 20px; }
   header .overlay-background {
     position: absolute;
     top: 0;
@@ -8850,35 +8857,29 @@ header {
     height: 100%;
     background: rgba(0, 0, 0, 0.83);
     z-index: 0; }
-  header .portrait-frame {
-    width: 250px;
-    height: 250px;
-    border-radius: 250px;
-    box-sizing: content-box;
-    background: #fff;
-    margin: 100px auto 15px auto;
-    overflow: hidden;
-    border: 3px solid #fff; }
-    header .portrait-frame img {
-      display: block;
-      width: 100%;
-      height: auto; }
   header .details-wrap {
-    margin-bottom: 50px; }
-    header .details-wrap .details-wrap--name {
-      font-size: 4.5em;
-      font-family: 'source_sans_prosemibold';
+    margin: 100px 0 40px; }
+    header .details-wrap .details-wrap--intro {
+      font-size: 3.125em;
+      font-family: 'shadows_into_lightregular';
       color: #fff;
       text-align: center;
-      margin-bottom: 15px; }
+      margin-bottom: 40px; }
+    header .details-wrap .details-wrap--name {
+      font-size: 5em;
+      font-family: 'source_sans_prosemibold';
+      color: #fff;
+      letter-spacing: 3px;
+      text-align: center;
+      margin-bottom: 5px; }
     header .details-wrap .details-wrap--title {
       font-size: 2.25em;
-      font-family: 'source_sans_prosemibold';
+      font-family: 'shadows_into_lightregular';
       color: #fff;
       text-align: center; }
   header .contact-wrap {
     text-align: center;
-    margin: 50px; }
+    margin: 50px 0 75px; }
     header .contact-wrap .contact-wrap--link {
       display: inline-block;
       text-decoration: none;
@@ -8894,6 +8895,15 @@ header {
       line-height: 53px; }
       header .contact-wrap .contact-wrap--link:hover {
         background: #21cff3; }
+  header .scroll-down-wrap {
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 auto;
+    width: 30px;
+    height: 30px;
+    padding-top: 5px;
+    color: #fff; }
 
 #logo {
   float: left;
@@ -9140,12 +9150,12 @@ header {
         top: 0;
         left: 0; }
 
-.contact-wrap {
+.contact-form-wrap {
   padding: 60px 0;
   background: #383b3d;
   background: #252525; }
 
-.contact-wrap .contact-wrap--title {
+.contact-form-wrap .contact-form-wrap--title {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 30px;
@@ -9153,7 +9163,7 @@ header {
   font-size: 38px;
   font-family: 'source_sans_probold'; }
 
-.contact-wrap .form-wrap {
+.contact-form-wrap .form-wrap {
   padding: 0 15px;
   max-width: 800px;
   margin: 0 auto; }
