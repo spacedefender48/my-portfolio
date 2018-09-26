@@ -1,14 +1,22 @@
 .about-wrap {
-    padding: 100px 0;
+    padding: 80px 0 100px;
     background: #fff;
+
+    .title {
+        text-align: center;
+        letter-spacing: 1px;
+        color: #252525;
+        font-size: 38px;
+        font-family: 'source_sans_probold';
+        margin-bottom: 48px;
+
+    }
 
     // Portrait image
     .portrait-wrap {
         max-width: 500px;
         border: 8px solid #fff;
         box-shadow: 0 0 30px rgba(0,0,0,.2);
-        height: 560px;
-        background: red;
         margin: 0 auto;
 
         img {

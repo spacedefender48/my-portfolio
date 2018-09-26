@@ -24,8 +24,10 @@
 
                         <div id="logo">
                             <a href="#" title="Logo">
-                                <img src="<?php bloginfo('template_url') ?>/img/logo.png" alt="Logo">
+                                <img src="<?php bloginfo('template_url') ?>/img/logo.png" alt="Logo"> 
+                                <p class="logo--initials">PK</p>
                             </a>
+                            
                         </div>
 
                         <ul class="clear">

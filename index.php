@@ -6,9 +6,15 @@
         <div id="about-sec" class="about-wrap">
             <div class="container-fluid">
                 <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <h2 class="title">About Me</h2>
+                    </div>
+                </div>
+            
+                <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <div class="portrait-wrap">
-
+                            <img src="<?php bloginfo('template_url') ?>/img/portrait.jpg" alt="Portrait Image">
                         </div>
                     </div>
                 </div>
@@ -84,7 +90,7 @@
         </div>
 
 
-        <div class="history-sec" id="history-sec">
+<!--         <div class="history-sec" id="history-sec">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
@@ -150,7 +156,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <div class="skills-sec">
             <div class="container-fluid">
