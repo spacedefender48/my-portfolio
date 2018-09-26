@@ -106,10 +106,6 @@
             });
         };
 
-        // Initiate functions
-        calculateScrollTop();
-        check_if_in_view();
-        change_active_header_item();
 
         // Validate form
         var is_form_valid = true;
@@ -239,6 +235,13 @@
                 });
             // }
         });
+
+
+        // Initiate functions
+        calculateScrollTop();
+        check_if_in_view();
+        change_active_header_item();
+        change_navigation_size();
 
     });
 })(jQuery, document, window);
