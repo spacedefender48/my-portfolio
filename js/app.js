@@ -92,7 +92,7 @@
             var window_top_position = $win.scrollTop();
             var window_bottom_position = (window_top_position + window_height);
 
-            $.each($animation_elements, function () {
+            $.each($animation_elements, function() {
                 var $element = $(this);
                 var element_height = $element.outerHeight();
                 var element_top_position = $element.offset().top;

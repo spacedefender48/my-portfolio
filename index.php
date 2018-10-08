@@ -12,7 +12,7 @@
                 </div>
             
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 animation-element slide-left">
                         <div class="portrait-wrap">
                             <img src="<?php bloginfo('template_url') ?>/img/portrait.jpg" alt="Portrait Image">
                         </div>
@@ -29,7 +29,7 @@
                     </div>
                 </div>
 
-                <div class="row">
+                <div class="row animation-element slide-left">
                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                         <div class="service-wrap">
                             <div class="service-wrap--icon">
@@ -166,6 +166,7 @@
                         <ul class="skills-list">
                             <li>
                                 <img src="<?php bloginfo('template_url') ?>/img/skills/html5.png" alt="HTML5" title="HTML5">
+                                
                             </li>
                             <li>
                                 <img src="<?php bloginfo('template_url') ?>/img/skills/css3.png" alt="CSS3" title="CSS3">
