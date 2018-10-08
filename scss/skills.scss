@@ -1,15 +1,23 @@
 .skills-sec {
     background: #fff;
-    padding: 60px 0;
+    padding: 80px 0 100px;
 
-    .skills-title {
+    .skills-sec--title {
         text-align: center;
         letter-spacing: 1px;
         color: #252525;
         font-size: 38px;
         font-family: 'source_sans_probold';
         margin-bottom: 48px;
+    }
 
+    .skills-title {
+        text-align: center;
+        letter-spacing: 1px;
+        color: #252525;
+        font-size: 18px;
+        font-family: 'source_sans_probold';
+        margin-bottom: 30px;
     }
 
     .skills-list {
@@ -22,17 +30,29 @@
 
         li {
             display: inline-block;
-            color: #fff;
-            font-size: 20px;
-            margin: 0 15px 10px;
-            min-height: 64px;
-            min-width: 64px;
+            width: 200px;
+            height: 40px;
+            line-height: 44px;
             position: relative;
+            background: #f0f0f0;
+            border-radius: 50px;
+            text-align: left;
+            padding-left: 80px;
+            margin-bottom: 15px;
+            font-family: 'source_sans_proregular';
+            @include transition(0.3s);
 
             img {
                 position: absolute;
-                top: 0;
-                left: 0;
+                top: 50%;
+                left: 50px;
+                width: 20px;
+                height: 20px;
+                transform: translateY(-50%);
+            }
+
+            &:hover {
+                color: $primary-color;
             }
         }
     }

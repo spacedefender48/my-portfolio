@@ -161,40 +161,83 @@
         <div class="skills-sec">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-12">
-                        <h2 class="skills-title">My skills</h2>
+                    <div class="col-lg-12 col-md-12">
+                        <h2 class="skills-sec--title">My skills</h2>
+                    </div>
+                </div>  
+
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <h3 class="skills-title">Front-end</h3>
                         <ul class="skills-list">
                             <li>
                                 <img src="<?php bloginfo('template_url') ?>/img/skills/html5.png" alt="HTML5" title="HTML5">
-                                
+                                HTML
                             </li>
+
                             <li>
                                 <img src="<?php bloginfo('template_url') ?>/img/skills/css3.png" alt="CSS3" title="CSS3">
+                                CSS3
                             </li>
+
                             <li>
                                 <img src="<?php bloginfo('template_url') ?>/img/skills/js.png" alt="JavaScript" title="JavaScript">
+                                JavaScript
                             </li>
+
                             <li>
                                 <img src="<?php bloginfo('template_url') ?>/img/skills/jquery.png" alt="jQuery" title="jQuery">
+                                jQuery
                             </li>
-                            <li>
-                                <img src="<?php bloginfo('template_url') ?>/img/skills/bootstrap.png" alt="Bootstrap" title="Bootstrap">
-                            </li>
+
+
                             <li>
                                 <img src="<?php bloginfo('template_url') ?>/img/skills/wordpress.png" alt="WordPress" title="WordPress">
+                                WordPress
                             </li>
+                        
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <h3 class="skills-title">Back-end</h3>
+                        <ul class="skills-list">
+                            <li>
+                                <img src="<?php bloginfo('template_url') ?>/img/skills/html5.png" alt="HTML5" title="HTML5">
+                                PHP
+                            </li>
+
                             <li>
                                 <img src="<?php bloginfo('template_url') ?>/img/skills/mysql.png" alt="MySQL" title="MySQL">
+                                MySQL
                             </li>
+
                             <li>
-                                <img src="<?php bloginfo('template_url') ?>/img/skills/responsive.png" alt="Responsive" title="Responsive">
+                                <img src="<?php bloginfo('template_url') ?>/img/skills/html5.png" alt="HTML5" title="HTML5">
+                                HTML
                             </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <h3 class="skills-title">Tools</h3>
+                        <ul class="skills-list">
                             <li>
-                                <img src="<?php bloginfo('template_url') ?>/img/skills/sass.png" alt="SASS" title="SASS">
+                                <img src="<?php bloginfo('template_url') ?>/img/skills/html5.png" alt="HTML5" title="HTML5">
+                                HTML
                             </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <h3 class="skills-title">Other</h3>
+                        <ul class="skills-list">
                             <li>
-                                GitHub
+                                <img src="<?php bloginfo('template_url') ?>/img/skills/html5.png" alt="HTML5" title="HTML5">
+                                HTML
                             </li>
+
                         </ul>
                     </div>
                 </div>
