@@ -8845,18 +8845,8 @@ table {
   font-style: normal; }
 header {
   min-height: 600px;
-  background: url("img/bg.jpg") no-repeat center center;
-  background-size: cover;
   position: relative;
   padding-bottom: 20px; }
-  header .overlay-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.83);
-    z-index: 0; }
   header .details-wrap {
     margin: 100px 0 40px; }
     header .details-wrap .details-wrap--intro {
@@ -9191,34 +9181,30 @@ header {
     margin: 0 auto; }
     .skills-sec .skills-list li {
       display: inline-block;
-      width: 200px;
-      height: 40px;
-      line-height: 44px;
-      position: relative;
-      background: #f0f0f0;
-      border-radius: 50px;
-      text-align: left;
-      padding-left: 80px;
-      margin-bottom: 15px;
-      font-family: 'source_sans_proregular';
+      margin: 10px;
       -webkit-transition: 0.3s;
       -moz-transition: 0.3s;
       -ms-transition: 0.3s;
       transition: 0.3s; }
       .skills-sec .skills-list li img {
-        position: absolute;
-        top: 50%;
-        left: 50px;
-        width: 20px;
-        height: 20px;
-        transform: translateY(-50%); }
+        display: block;
+        height: 64px;
+        width: auto;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        transition: 0.3s; }
+        .skills-sec .skills-list li img:hover {
+          -webkit-filter: grayscale(0%);
+          filter: grayscale(0%); }
       .skills-sec .skills-list li:hover {
         color: #00b4d9; }
 
 .contact-form-wrap {
   padding: 60px 0;
-  background: #383b3d;
-  background: #252525; }
+  position: relative; }
 
 .contact-form-wrap .contact-form-wrap--title {
   text-align: center;
@@ -9226,7 +9212,7 @@ header {
   margin-bottom: 30px;
   color: #fff;
   font-size: 38px;
-  font-family: 'source_sans_probold'; }
+  font-family: 'source_sans_prosemibold'; }
 
 .contact-form-wrap .form-wrap {
   padding: 0 15px;
@@ -9288,6 +9274,15 @@ header {
   content: '';
   display: block;
   clear: both; }
+
+.overlay-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.83);
+  z-index: 0; }
 
 .animation-element {
   position: relative; }

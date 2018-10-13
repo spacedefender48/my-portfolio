@@ -13,7 +13,7 @@
 
 
 
-    <header class="site-header">
+    <header class="site-header" data-parallax="scroll" data-image-src="<?php bloginfo('template_url') ?>/img/bg.jpg">
 
         <div class="overlay-background"></div>
 

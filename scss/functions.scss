@@ -28,3 +28,7 @@ $primary-color: #00b4d9;
         box-shadow: $x $y $blur $spread rgba(0,0,0,0.3);
 }
 
+@mixin gray-filter($x) {
+    -webkit-filter: grayscale($x);
+    filter: grayscale($x);
+}
