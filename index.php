@@ -180,10 +180,49 @@
                                 <img src="<?php bloginfo('template_url') ?>/img/skills/js.png" alt="JavaScript" title="JavaScript">
                             </li>
                             <li>
-                                <img src="<?php bloginfo('template_url') ?>/img/skills/jquery.png" alt="jQuery" title="jQuery">
+                                <img src="<?php bloginfo('template_url') ?>/img/skills/sass.png" alt="SASS" title="SASS">
                             </li>
                             <li>
                                 <img src="<?php bloginfo('template_url') ?>/img/skills/wordpress.png" alt="WordPress" title="WordPress">
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <h3 class="skills-title">Back-end</h3>
+                        <ul class="skills-list">
+                            <li>
+                                <img src="<?php bloginfo('template_url') ?>/img/skills/php.png" alt="PHP" title="PHP">
+                            </li>
+                            <li>
+                                <img src="<?php bloginfo('template_url') ?>/img/skills/mysql.png" alt="MySQL" title="MySQL">
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <h3 class="skills-title">Frameworks</h3>
+                        <ul class="skills-list">
+                            <li>
+                                <img src="<?php bloginfo('template_url') ?>/img/skills/bootstrap.png" alt="Bootstrap" title="Bootstrap">
+                            </li>
+                            <li>
+                                <img src="<?php bloginfo('template_url') ?>/img/skills/jquery.png" alt="jQuery" title="jQuery">
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <h3 class="skills-title">Tools</h3>
+                        <ul class="skills-list">
+                            <li>
+                                <img src="<?php bloginfo('template_url') ?>/img/skills/git.png" alt="Git" title="Git">
+                            </li>
+                            <li>
+                                <img src="<?php bloginfo('template_url') ?>/img/skills/github.png" alt="GitHub" title="GitHub">
+                            </li>
+                            <li>
+                                <img src="<?php bloginfo('template_url') ?>/img/skills/visual-studio.png" alt="Visual Studio Code" title="Visual Studio Code">
                             </li>
                         </ul>
                     </div>
