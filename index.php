@@ -3,7 +3,7 @@
 
 
     <section id="content">
-        <div id="about-sec" class="about-wrap">
+        <section id="about-sec" class="about-wrap">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -19,9 +19,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="services-sec" id="services-sec">
+        <section class="services-sec" id="services-sec">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -87,10 +87,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
 
-<!--         <div class="history-sec" id="history-sec">
+        <section class="history-sec" id="history-sec">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
@@ -128,7 +128,7 @@
                         <div class="history-wrap">
                             <div class="title-wrap">
                                 <div class="title-wrap--icon"></div>
-                                <h2 class="title-wrap--text">Experience</h2>
+                                <h2 class="title-wrap--text">Certificates</h2>
                             </div>
 
                             <div class="post-wrap">
@@ -156,9 +156,19 @@
                     </div>
                 </div>
             </div>
-        </div> -->
+        </section>
 
-        <div class="skills-sec">
+        <section id="portfolio-sec">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                        <h2 class="portfolio-sec--title">Portfolio</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills-sec">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12 col-md-12">
@@ -229,16 +239,16 @@
 
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="contact-form-wrap" id="contact-sec" data-parallax="scroll" data-image-src="<?php bloginfo('template_url') ?>/img/bg.jpg">
+        <section class="contact-form-wrap" id="contact-sec" data-parallax="scroll" data-image-src="<?php bloginfo('template_url') ?>/img/bg.jpg">
 
             <div class="overlay-background"></div>
 
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2 class="contact-form-wrap--title">Contact Form</h2>
+                        <h2 class="contact-form-wrap--title">Get in touch</h2>
                     </div>
                 </div>
 
@@ -273,7 +283,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </section>
 
 
