@@ -256,19 +256,19 @@
                     <div class="col-lg-12">
                         <div class="form-wrap">
                             <form action="#" method="GET" id="contact-form">
-                                <input type="text" name="f_name" placeholder="Name" class="field-text" id="name_field">
+                                <input type="text" name="f_name" placeholder="Name" class="field-text" id="name_field" required>
 
                                 <p class="error-text--name">Please enter your name</p>
 
-                                <input type="email" name="f_email" placeholder="Email" class="field-text" id="email_field">
+                                <input type="email" name="f_email" placeholder="Email" class="field-text" id="email_field" required>
 
                                 <p class="error-text--email"></p>
 
-                                <input type="text" name="f_subject" placeholder="Subject" class="field-text" id="subject_field">
+                                <input type="text" name="f_subject" placeholder="Subject" class="field-text" id="subject_field" required>
 
                                 <p class="error-text--subject">Please enter your subject</p>
 
-                                <textarea name="f_message" placeholder="Your Message" class="field-area" id="message_field"></textarea>
+                                <textarea name="f_message" placeholder="Your Message" class="field-area" id="message_field" required></textarea>
                                 <p class="error-text--message">Please enter your message</p>
 
                                 <input type="submit" name="f_submit" value="Send Message" class="submit-btn">
@@ -284,6 +284,8 @@
                 </div>
             </div>
         </section>
+
+        <div id="dialog" class="my-dialog" title="Dialog Title">I'm a dialog</div>
     </section>
 
 

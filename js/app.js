@@ -108,7 +108,7 @@
 
 
         // Validate form
-        var is_form_valid = true;
+        // var is_form_valid = true;
 
         var $name_field = $('#name_field');
         var $name_error = $('#contact-form .error-text--name');
@@ -129,9 +129,10 @@
 
             if (name_value.trim() == '') {
                 $name_error.show();
-                is_form_valid = false;
+                return false;
             } else {
                 $name_error.hide();
+                return true;
             }
         }
 
@@ -142,15 +143,16 @@
             if (email_value.trim() == '') {
                 $email_error.text('Please enter your email');
                 $email_error.show();
-                is_form_valid = false;
+                return false;
             } else {
 
                 if (pattern.test(email_value)) {
                     $email_error.hide();
+                    return true;
                 } else {
                     $email_error.text('Please enter a valid email address');
                     $email_error.show();
-                    is_form_valid = false;
+                    return false;
                 }
             }
 
@@ -161,9 +163,10 @@
 
             if (subject_value.trim() == '') {
                 $subject_error.show();
-                is_form_valid = false;
+                return false;
             } else {
                 $subject_error.hide();
+                return true;
             }
         }
 
@@ -172,19 +175,17 @@
 
             if (message_value.trim() == '') {
                 $message_error.show();
-                is_form_valid = false;
+                return false;
             } else {
                 $message_error.hide();
+                return true;
             }
         }
 
         function validateContactForm() {
-            is_form_valid = true;
-            checkName();
-            checkEmail();
-            checkSubject();
-            checkMessage();
+            var is_form_valid = checkName() && checkEmail() && checkSubject() && checkMessage();
             console.log('Is form valid? ' + is_form_valid);
+            return is_form_valid;
         }
 
 
@@ -210,11 +211,14 @@
 
 
         $submit_btn.on('click submit', function (e) {
-            // validateContactForm();
-            // if (!is_form_valid) {
-                e.preventDefault();
-                var details = $('#contact-form').serialize();
+            e.preventDefault();
+            var is_form_ready_to_send = validateContactForm();
+            if (is_form_ready_to_send) {
                 
+                var details = $('#contact-form').serialize();
+            
+                $submit_btn.attr('disabled', 'disabled');
+
                 $.ajax({
                     type: 'POST',
                     url: ajax_object.url,
@@ -226,14 +230,29 @@
 
                     success: function(data) {
                         // alert('Your email has been sent successfully!');
-                        alert(data);
+                        // alert(data);
+                        $( "#dialog" ).dialog({
+                            dialogClass: "center",
+                            buttons: [
+                              {
+                                text: "OK",
+                                click: function() {
+                                    $submit_btn.removeAttr('disabled');
+                                    $( this ).dialog( "close" );
+                                }
+                              }
+                            ],
+            
+                            modal: true
+                        });
                     },
 
                     fail: function(data) {
                         alert('ERROR: Email has not been sent');
                     }
                 });
-            // }
+            }
+
         });
 
 

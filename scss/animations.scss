@@ -1,0 +1,25 @@
+.animation-element {
+    position: relative;
+}
+
+.animation-element.slide-left {
+    opacity: 0;
+    transform: translate3d(-100px, 0, 0);
+    transition: 0.5s linear;
+}
+
+.animation-element.slide-left.in-view {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+.animation-element.bounce-up {
+    opacity: 1;
+    transform: translate3d(0, 200px, 0);
+    transition: 0.7s ease-out;
+}
+
+.animation-element.bounce-up.in-view {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}

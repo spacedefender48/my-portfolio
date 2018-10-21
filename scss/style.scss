@@ -4,12 +4,19 @@ Author: Plamen Kolarov
 Description: This is my personal portfolio project
 Tags: portfolio
 */
-
+// System section
 @import 'bootstrap.min';
 @import 'reset';
-@import 'fontawesome.min';
-@import 'fonts';
 @import 'functions';
+@import 'fonts';
+@import 'animations';
+
+// Plugins section
+@import 'fontawesome.min';
+@import 'jquery-ui';
+@import 'ui-widgets';
+
+// Main section
 @import 'header';
 @import 'about';
 @import 'services';
@@ -20,6 +27,7 @@ Tags: portfolio
 @import 'footer';
 
 
+// General Settings
 .container-fluid {
     max-width: 1140px;
     margin: 0 auto;
@@ -41,28 +49,6 @@ Tags: portfolio
     z-index: 0;
 }
 
-.animation-element {
-    position: relative;
-}
-
-.animation-element.slide-left {
-    opacity: 0;
-    transform: translate3d(-100px, 0, 0);
-    transition: 0.5s linear;
-}
-
-.animation-element.slide-left.in-view {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-}
-
-.animation-element.bounce-up {
-    opacity: 1;
-    transform: translate3d(0, 200px, 0);
-    transition: 0.7s ease-out;
-}
-
-.animation-element.bounce-up.in-view {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
+:focus {
+    outline: none;    
 }
