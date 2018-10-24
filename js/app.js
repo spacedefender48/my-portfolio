@@ -124,88 +124,117 @@
 
         var $submit_btn = $('.submit-btn');
 
-        function checkName() {
+        function checkName(isFocusSet = false) {
             var name_value = $name_field.val();
 
             if (name_value.trim() == '') {
                 $name_error.show();
+                $name_field.addClass('error-input');
+                if (isFocusSet) {
+                    $name_field.focus();
+                }
                 return false;
             } else {
                 $name_error.hide();
+                $name_field.removeClass('error-input');
                 return true;
             }
         }
 
-        function checkEmail() {
+        function checkEmail(isFocusSet = false) {
             var email_value = $email_field.val();
             var pattern = /^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i;
 
             if (email_value.trim() == '') {
-                $email_error.text('Please enter your email');
+                $email_error.text('REQUIRED');
                 $email_error.show();
+                $email_field.addClass('error-input');
+                
+                if (isFocusSet) {
+                    $email_field.focus();
+                }
                 return false;
             } else {
 
                 if (pattern.test(email_value)) {
                     $email_error.hide();
+                    $email_field.removeClass('error-input');
                     return true;
                 } else {
-                    $email_error.text('Please enter a valid email address');
+                    $email_error.text('Enter a valid email address');
                     $email_error.show();
+                    $email_field.addClass('error-input');
+
+                    if (isFocusSet) {
+                        $email_field.focus();
+                    }
                     return false;
                 }
             }
 
         }
 
-        function checkSubject() {
+        function checkSubject(isFocusSet = false) {
             var subject_value = $subject_field.val();
 
             if (subject_value.trim() == '') {
                 $subject_error.show();
+                $subject_field.addClass('error-input');
+
+                if (isFocusSet) {
+                    $subject_field.focus();
+                }
                 return false;
             } else {
                 $subject_error.hide();
+                $subject_field.removeClass('error-input');
                 return true;
             }
         }
 
-        function checkMessage() {
+        function checkMessage(isFocusSet = false) {
             var message_value = $message_field.val();
 
             if (message_value.trim() == '') {
                 $message_error.show();
+                $message_field.addClass('error-input');
+
+                if (isFocusSet) {
+                    $message_field.focus();
+                }
                 return false;
             } else {
                 $message_error.hide();
+                $message_field.removeClass('error-input');
                 return true;
             }
         }
 
         function validateContactForm() {
-            var is_form_valid = checkName() && checkEmail() && checkSubject() && checkMessage();
+            var is_form_valid = checkName(true) && checkEmail(true) && checkSubject(true) && checkMessage(true);
             console.log('Is form valid? ' + is_form_valid);
             return is_form_valid;
         }
 
 
-        $name_field.on('input blur', function () {
+        $name_field.on('input', function () {
             checkName();
         });
 
-        $email_field.on('focus', function () {
-            $email_error.hide();
-        });
-
         $email_field.on('blur', function () {
-            checkEmail();
+            if ($email_field.val() == '') { 
+                $email_field.removeClass('error-input');
+                $email_error.hide();
+            } else {
+                checkEmail();
+            }
         });
 
-        $subject_field.on('input blur', function () {
+        $subject_field.on('input', function () {
             checkSubject();
         });
 
-        $message_field.on('input blur', function () {
+        $message_field.on('input', function () {
             checkMessage();
         });
 
