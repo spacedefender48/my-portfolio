@@ -21,7 +21,7 @@
             </div>
         </section>
 
-        <section class="services-sec" id="services-sec">
+        <section id="services-sec" class="services-sec">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -30,7 +30,7 @@
                 </div>
 
                 <div class="row animation-element slide-left">
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 frame">
                         <div class="service-wrap">
                             <div class="service-wrap--icon">
                                 <i class="fas fa-cloud"></i>
@@ -44,7 +44,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 frame">
                         <div class="service-wrap">
                             <div class="service-wrap--icon">
                                 <i class="fas fa-cloud"></i>
@@ -58,7 +58,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 frame">
                         <div class="service-wrap">
                             <div class="service-wrap--icon">
                                 <i class="fas fa-cloud"></i>
@@ -72,7 +72,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 frame">
                         <div class="service-wrap">
                             <div class="service-wrap--icon">
                                 <i class="fas fa-cogs"></i>
@@ -90,10 +90,10 @@
         </section>
 
 
-        <section class="history-sec" id="history-sec">
+        <section id="history-sec" class="history-sec">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-frame">
                         <div class="history-wrap">
                             <div class="title-wrap">
                                 <div class="title-wrap--icon"></div>
@@ -124,7 +124,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-frame">
                         <div class="history-wrap">
                             <div class="title-wrap">
                                 <div class="title-wrap--icon"></div>
@@ -168,16 +168,16 @@
             </div>
         </section>
 
-        <section class="skills-sec">
+        <section id="skills-sec" class="skills-sec">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-12 col-md-12">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <h2 class="skills-sec--title">My skills</h2>
                     </div>
                 </div>  
 
                 <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 category-wrap">
                         <h3 class="skills-title">Front-end</h3>
                         <ul class="skills-list">
                             <li>
@@ -192,13 +192,10 @@
                             <li>
                                 <img src="<?php bloginfo('template_url') ?>/img/skills/sass.png" alt="SASS" title="SASS">
                             </li>
-                            <li>
-                                <img src="<?php bloginfo('template_url') ?>/img/skills/wordpress.png" alt="WordPress" title="WordPress">
-                            </li>
                         </ul>
                     </div>
 
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 category-wrap">
                         <h3 class="skills-title">Back-end</h3>
                         <ul class="skills-list">
                             <li>
@@ -210,7 +207,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 category-wrap">
                         <h3 class="skills-title">Frameworks</h3>
                         <ul class="skills-list">
                             <li>
@@ -219,10 +216,13 @@
                             <li>
                                 <img src="<?php bloginfo('template_url') ?>/img/skills/jquery.png" alt="jQuery" title="jQuery">
                             </li>
+                            <li>
+                                <img src="<?php bloginfo('template_url') ?>/img/skills/wordpress.png" alt="WordPress" title="WordPress">
+                            </li>
                         </ul>
                     </div>
 
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 category-wrap">
                         <h3 class="skills-title">Tools</h3>
                         <ul class="skills-list">
                             <li>
@@ -293,7 +293,9 @@
             </div>
         </section>
 
-        <div id="dialog" class="my-dialog" title="Dialog Title">I'm a dialog</div>
+        <div id="dialog" class="my-dialog" title="Sent email">
+            I'm a dialog
+        </div>
     </section>
 
 

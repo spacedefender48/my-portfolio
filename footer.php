@@ -4,16 +4,16 @@
         
         <footer class="site-footer">
             <div class="social-icons-wrap">
-                <a href="#" class="social-icons-wrap--icon-link facebook">
+                <a href="https://www.facebook.com/profile.php?id=100001624546227" class="social-icons-wrap--icon-link facebook" target="_blank">
                     <i class="fab fa-facebook-f"></i>
                 </a>
-                <a href="#" class="social-icons-wrap--icon-link github">
+                <a href="https://github.com/spacedefender48/" class="social-icons-wrap--icon-link github" target="_blank">
                     <i class="fab fa-github-alt"></i>
                 </a>
-                <a href="#" class="social-icons-wrap--icon-link linkedin">
+                <a href="https://www.linkedin.com/in/plamen-kolarov-62bbb7141/" class="social-icons-wrap--icon-link linkedin" target="_blank">
                     <i class="fab fa-linkedin-in"></i>
                 </a>
-                <a href="#" class="social-icons-wrap--icon-link google">
+                <a href="https://plus.google.com/113944910930564683462" class="social-icons-wrap--icon-link google" target="_blank">
                     <i class="fab fa-google-plus-g"></i>
                 </a>
 

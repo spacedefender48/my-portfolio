@@ -31,6 +31,10 @@ header {
             color: #fff;
             text-align: center;
         }
+
+        @media only screen and (max-width: 768px) {
+            font-size: 13px;
+        }
     }
 
     .contact-wrap {
@@ -68,6 +72,7 @@ header {
         height: 30px;
         padding-top: 5px;
         color: #fff;
+        
     }
 
     
@@ -147,6 +152,97 @@ header {
                 color: $primary-color;
             }
         }
+
+
+        @media only screen and (max-width: 852px) and (min-width: 768px) {
+            display: none;
+        }
+
+    }
+
+
+
+// Canvas button
+    .canvas-btn--wrap {
+        padding: 10px 0;
+
+        .canvas-btn {
+            width: 37px;
+            height: 26px;
+            padding: 8px 15px 9px 5px;
+            cursor: pointer;
+            float: right;
+            position: relative;
+            box-sizing: content-box;
+            @include transition(0.5s);
+        
+            div {
+                height: 4px;
+                width: 37px;
+                background: #222;
+                position: absolute;
+                left: 5px;
+                @include transition(0.3s);
+            }
+
+            div.top {
+                top: 8px;
+            }
+
+            div.middle {
+                @include transition(0s);
+                top: 19px;
+            }
+
+            div.bottom {
+                top: 30px;
+                margin-bottom: 0;
+            }
+        
+            @media only screen and (max-width: 992px) and (min-width: 853px) {
+                display: none;
+            }
+        }
+
+        @media only screen and (max-width: 992px) and (min-width: 853px) {
+            padding: 0;
+        }
+    }
+
+    .canvas-menu--wrap {
+        
+
+        .canvas-menu {
+            display: block;
+            float: none;
+            width: 100%;
+            
+
+            li {
+                float: none;
+                border-bottom: 1px solid #222;
+
+                a {
+                    padding: 15px 0;
+                    width: 100%;
+                    text-align: center;
+                }
+
+                &:last-child {
+                    border-bottom: none;
+                }
+            }
+
+            @media only screen and (max-width: 992px) and (min-width: 853px) {
+                display: none;
+                padding: 0;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 992px) {
+        height: 63px;
+        overflow: hidden;
     }
 }
 
@@ -171,6 +267,39 @@ header {
             font-size: 22px;
             transform: translateY(10%);
         }
+    }
+}
+
+#main-nav.canvas-menu-open {
+    height: 371px;
+
+    .canvas-btn--wrap {
+
+        .canvas-btn {
+            width: 31px;
+        
+            div {
+                width: 31px;
+                transform-origin: 0 50%;
+            }
+            
+            div.top {
+                transform: rotateZ(45deg);
+            }
+
+            div.middle {
+                visibility: hidden;
+            }
+            
+            div.bottom {
+                transform: rotateZ(-45deg);
+            }
+        }
+    }
+
+    @media only screen and (min-width: 853px) {
+        height: 63px;
+        overflow: hidden;
     }
 }
 

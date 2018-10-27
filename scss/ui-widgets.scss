@@ -1,10 +1,11 @@
-.my-dialog {
-    display: none;
-}
-
-
 // Dialog buttons
-.ui-dialog {
+.custom-dialog {
+
+    .ui-dialog-content {
+        line-height: 22px;
+        text-align: center;
+    }
+
     .ui-dialog-buttonpane {
         border-top: none;
         padding-right: 0.4em;
@@ -32,7 +33,7 @@
     }
 }
 
-.ui-dialog.center {
+.custom-dialog.center {
     .ui-dialog-buttonpane {
      
         .ui-dialog-buttonset {
@@ -46,4 +47,9 @@
         }
 
     }
+}
+
+
+.ui-widget-overlay {
+    opacity: 0.5;
 }

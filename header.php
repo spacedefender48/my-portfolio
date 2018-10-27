@@ -17,10 +17,11 @@
 
         <div class="overlay-background"></div>
 
+
         <nav id="main-nav">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-12 clear">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 clear">
 
                         <div id="logo">
                             <a href="#" title="Logo">
@@ -29,10 +30,13 @@
                             </a>
                             
                         </div>
+                    </div>
+
+                    <div class="col-lg-9 col-md-9 col-sm-9 hidden-xs clear">
 
                         <ul class="clear">
                             <li>
-                                <a href="#">Home</a>
+                                <a href="#">Intro</a>
                             </li>
                             <li>
                                 <a href="#about-sec">About</a>
@@ -41,18 +45,60 @@
                                 <a href="#services-sec">Services</a>
                             </li>
                             <li>
-                                <a href="#history-sec">Resume</a>
+                                <a href="#history-sec">History</a>
                             </li>
                             <li>
-                                <a href="#">Portfolio</a>
+                                <a href="#portfolio-sec">Portfolio</a>
                             </li>
                             <li>
-                                <a href="#">Contact</a>
+                                <a href="#skills-sec">Skills</a>
+                            </li>
+                            <li>
+                                <a href="#contact-sec">Contact</a>
                             </li>
                         </ul>
                     </div>
+
+                    <div class="hidden-lg hidden-md col-sm-9 col-xs-9 canvas-btn--wrap">
+                        <div class="canvas-btn">
+                            <div class="top"></div>
+                            <div class="middle"></div>
+                            <div class="bottom"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="hidden-lg hidden-md col-sm-12 col-xs-12">
+                        <div class="canvas-menu--wrap">
+                            <ul class="canvas-menu">
+                                <li>
+                                    <a href="#">Intro</a>
+                                </li>
+                                <li>
+                                    <a href="#about-sec">About</a>
+                                </li>
+                                <li>
+                                    <a href="#services-sec">Services</a>
+                                </li>
+                                <li>
+                                    <a href="#history-sec">History</a>
+                                </li>
+                                <li>
+                                    <a href="#portfolio-sec">Portfolio</a>
+                                </li>
+                                <li>
+                                    <a href="#skills-sec">Skills</a>
+                                </li>
+                                <li>
+                                    <a href="#contact-sec">Contact</a>
+                                </li>                    
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            
         </nav>
 
 
@@ -70,16 +116,16 @@
                     </div>
 
                     <div class="social-icons-wrap">
-                        <a href="#" class="social-icons-wrap--icon-link facebook">
+                        <a href="https://www.facebook.com/profile.php?id=100001624546227" class="social-icons-wrap--icon-link facebook" target="_blank">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="#" class="social-icons-wrap--icon-link github">
+                        <a href="https://github.com/spacedefender48/" class="social-icons-wrap--icon-link github" target="_blank">
                             <i class="fab fa-github-alt"></i>
                         </a>
-                        <a href="#" class="social-icons-wrap--icon-link linkedin">
+                        <a href="https://www.linkedin.com/in/plamen-kolarov-62bbb7141/" class="social-icons-wrap--icon-link linkedin" target="_blank">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
-                        <a href="#" class="social-icons-wrap--icon-link google">
+                        <a href="https://plus.google.com/113944910930564683462" class="social-icons-wrap--icon-link google" target="_blank">
                             <i class="fab fa-google-plus-g"></i>
                         </a>
 

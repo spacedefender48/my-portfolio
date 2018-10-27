@@ -8,17 +8,44 @@
         var $header_list_items = $('#main-nav ul li');
         var $scroll_down_btn = $('#scroll-down-btn');
         var $main_nav = $('#main-nav');
+        var header_positions;
+        var $canvas_btn = $('.canvas-btn');
 
 
         // Smooth scroll for navigation links
         $("a[href^='#']").click(function(e) {
             e.preventDefault();
-               
-            var position = $($(this).attr("href")).offset().top;
+            
+            var href_link = $(this).attr('href');
+
+            var position;
+            
+            if (href_link == '#about-sec') {
+                position = $($(this).attr("href")).offset().top;
+
+                $body.animate({
+                    scrollTop: (position - 30)
+                }, 500 );
+                
+            } else if (href_link == '#') {
+
+                // Animate to top
+                $body.animate({
+                    scrollTop: 0
+                }, 500 );
+            } else {
+                position = $($(this).attr("href")).offset().top;
+
+                // Animate to section
+                $body.animate({
+                    scrollTop: (position - 25)
+                }, 500 );
+            }
+            
+
+
            
-            $body.animate({
-                scrollTop: (position - 50)
-            }, 500 );
+            
 
         });
 
@@ -45,18 +72,52 @@
             }
         }
 
+        function calculate_active_header_positions(){
+            header_positions = {
+                "about-sec": $('#about-sec').offset().top - 50,
+                "services-sec": $('#services-sec').offset().top - 30,
+                "history-sec": $('#history-sec').offset().top - 30,
+                "portfolio-sec": $('#portfolio-sec').offset().top - 30,
+                "skills-sec": $('#skills-sec').offset().top - 30,
+                "contact-sec": $('#contact-sec').offset().top -30
+            }
+        }
+
+        calculate_active_header_positions();
+
         function change_active_header_item() {       
             var window_scroll = $win.scrollTop();
 
+
             $header_list_items.removeClass('active');
-            if (window_scroll < 500) {
+            if (window_scroll < header_positions["about-sec"]) {
+
                 $header_list_items.eq(0).addClass('active');
-            } else if (window_scroll >= 500 && window_scroll < 1100) {
+
+            } else if (window_scroll >= header_positions["about-sec"] && window_scroll < header_positions["services-sec"]) {
+
                 $header_list_items.eq(1).addClass('active');
-            } else if (window_scroll >= 1100 && window_scroll < 1800) {
+
+            } else if (window_scroll >= header_positions["services-sec"] && window_scroll < header_positions["history-sec"]) {
+
                 $header_list_items.eq(2).addClass('active');
-            } else if (window_scroll >= 1800) {
+
+            } else if (window_scroll >= header_positions["history-sec"] && window_scroll < header_positions["portfolio-sec"]) {
+
                 $header_list_items.eq(3).addClass('active');
+
+            } else if (window_scroll >= header_positions["portfolio-sec"] && window_scroll < header_positions["skills-sec"]) {
+
+                $header_list_items.eq(4).addClass('active');
+                
+            } else if (window_scroll >= header_positions["skills-sec"] && window_scroll < header_positions["contact-sec"]) {
+
+                $header_list_items.eq(5).addClass('active');
+
+            } else if (window_scroll >= header_positions["contact-sec"]) {
+
+                $header_list_items.eq(6).addClass('active');
+
             }
 
             
@@ -79,7 +140,13 @@
             calculateScrollTop();
             check_if_in_view();
             change_active_header_item();
-            change_navigation_size();
+            // change_navigation_size();
+        });
+
+        $win.on('resize', function(){
+            calculate_active_header_positions();
+
+            console.log(header_positions);
         });
 
         
@@ -161,7 +228,7 @@
                     $email_field.removeClass('error-input');
                     return true;
                 } else {
-                    $email_error.text('Enter a valid email address');
+                    $email_error.text('INVALID');
                     $email_error.show();
                     $email_field.addClass('error-input');
 
@@ -212,7 +279,7 @@
 
         function validateContactForm() {
             var is_form_valid = checkName(true) && checkEmail(true) && checkSubject(true) && checkMessage(true);
-            console.log('Is form valid? ' + is_form_valid);
+
             return is_form_valid;
         }
 
@@ -221,7 +288,19 @@
             checkName();
         });
 
-        $email_field.on('blur', function () {
+        $email_field.on('input', function () {
+            // if ($email_field.val() == '') { 
+            //     $email_field.removeClass('error-input');
+            //     $email_error.hide();
+            // } else {
+            //     checkEmail();
+            // }
+            // checkEmail();
+            $email_error.hide();
+            $email_field.removeClass('error-input');
+        });
+
+        $email_field.on('blur', function(){
             if ($email_field.val() == '') { 
                 $email_field.removeClass('error-input');
                 $email_error.hide();
@@ -248,6 +327,7 @@
             
                 $submit_btn.attr('disabled', 'disabled');
 
+                
                 $.ajax({
                     type: 'POST',
                     url: ajax_object.url,
@@ -258,38 +338,60 @@
                     },
 
                     success: function(data) {
-                        // alert('Your email has been sent successfully!');
-                        // alert(data);
-                        $( "#dialog" ).dialog({
-                            dialogClass: "center",
-                            buttons: [
-                              {
-                                text: "OK",
-                                click: function() {
-                                    $submit_btn.removeAttr('disabled');
-                                    $( this ).dialog( "close" );
-                                }
-                              }
-                            ],
-            
-                            modal: true
-                        });
+                        $('#dialog').html('Thank you for your message. We will contact you in the next few days');
+                        $('#dialog').dialog('open');
                     },
 
                     fail: function(data) {
-                        alert('ERROR: Email has not been sent');
+                        $('#dialog').html("Sorry. The message you sent did not receive to its target");
+                        $('#dialog').dialog('open');
                     }
                 });
             }
 
         });
 
+        function initiateDialogs() {
+            $( "#dialog" ).dialog({
+                autoOpen: false,
+                dialogClass: "center custom-dialog",
+                width: '350px',
+                buttons: [
+                  {
+                    text: "OK",
+                    click: function() {
+                        $submit_btn.removeAttr('disabled');
+                        $( this ).dialog( "close" );
+                    }
+                  }
+                ],
+
+                modal: true
+            });
+        }
+
+        // Canvas menu
+        $canvas_btn.on('click', function(){
+
+            if ($main_nav.hasClass('canvas-menu-open')) {
+                $main_nav.removeClass('canvas-menu-open');
+            } else {
+                $main_nav.addClass('canvas-menu-open');
+            }
+            
+        });
+
+        // Canvas menu links
+        $('#main-nav .canvas-menu li a').on('click', function(){
+            $main_nav.removeClass('canvas-menu-open');
+        });
 
         // Initiate functions
         calculateScrollTop();
         check_if_in_view();
         change_active_header_item();
-        change_navigation_size();
+        // change_navigation_size();
+        initiateDialogs();
 
     });
 })(jQuery, document, window);
