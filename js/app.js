@@ -122,31 +122,15 @@
 
             
         }
-  
-        function change_navigation_size() {
-            var about_me_position = $('#about-sec').offset().top;
-            var window_scroll = $win.scrollTop();
-
-            if (window_scroll >= (about_me_position - 30)) {
-                $main_nav.addClass('small');
-            } else {
-                $main_nav.removeClass('small');
-            }
-
-        }
 
         $win.on('resize scroll', function () {
-            // console.log($win.scrollTop());
             calculateScrollTop();
             check_if_in_view();
             change_active_header_item();
-            // change_navigation_size();
         });
 
         $win.on('resize', function(){
             calculate_active_header_positions();
-
-            console.log(header_positions);
         });
 
         
@@ -175,7 +159,6 @@
 
 
         // Validate form
-        // var is_form_valid = true;
 
         var $name_field = $('#name_field');
         var $name_error = $('#contact-form .error-text--name');
@@ -289,13 +272,6 @@
         });
 
         $email_field.on('input', function () {
-            // if ($email_field.val() == '') { 
-            //     $email_field.removeClass('error-input');
-            //     $email_error.hide();
-            // } else {
-            //     checkEmail();
-            // }
-            // checkEmail();
             $email_error.hide();
             $email_field.removeClass('error-input');
         });
@@ -390,7 +366,6 @@
         calculateScrollTop();
         check_if_in_view();
         change_active_header_item();
-        // change_navigation_size();
         initiateDialogs();
 
     });
