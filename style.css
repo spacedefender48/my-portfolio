@@ -10056,6 +10056,9 @@ a.ui-button:active,
 .ui-widget-overlay {
   opacity: 0.5; }
 
+.ui-tooltip {
+  border-radius: 0; }
+
 header {
   min-height: 600px;
   position: relative;
@@ -10321,7 +10324,7 @@ header {
     font-family: 'source_sans_probold';
     margin-bottom: 48px; }
   .about-wrap .portrait-wrap {
-    max-width: 500px;
+    max-width: 350px;
     border: 8px solid #fff;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
     margin: 0 auto; }

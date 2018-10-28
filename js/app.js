@@ -362,6 +362,16 @@
             $main_nav.removeClass('canvas-menu-open');
         });
 
+
+        // Tooltips added
+        $doc.tooltip({
+            position: {
+                my: 'center bottom+40', 
+                at: 'center bottom',
+                collision: 'fit'
+            }
+        });
+
         // Initiate functions
         calculateScrollTop();
         check_if_in_view();
