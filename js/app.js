@@ -372,6 +372,14 @@
             }
         });
 
+        // Portfolio slider
+        var portfolio_slider = $( '#portfolio-slider' );
+        portfolio_slider.owlCarousel({
+            loop:true,
+            nav:true,
+            items: 1
+        });
+
         // Initiate functions
         calculateScrollTop();
         check_if_in_view();

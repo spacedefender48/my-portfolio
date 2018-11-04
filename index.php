@@ -58,7 +58,7 @@
                             <h2 class="service-wrap--title">Quality websites</h2>
 
                             <p class="service-wrap--desc">
-                                All website that I make are made with care for high quality and all details that can make an impression to user
+                                All website that I make are made with high quality, as quality is a must when I work on projects
                             </p>
                         </div>
                     </div>
@@ -72,7 +72,7 @@
                             <h2 class="service-wrap--title">WordPress websites</h2>
 
                             <p class="service-wrap--desc">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.
+                                I develop and maintain sites on WordPress, like blog and news sites.
                             </p>
                         </div>
                     </div>
@@ -114,7 +114,7 @@
                             <h2 class="service-wrap--title">Customizations</h2>
 
                             <p class="service-wrap--desc">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.
+                                Making modifications to sites is needed in order to keep up with latest trends
                             </p>
                         </div>
                     </div>
@@ -186,7 +186,7 @@
                             </div>
 
                             <div class="post-wrap">
-                                <h3 class="post-wrap--title">High School</h3>
+                                <h3 class="post-wrap--title">High School education</h3>
                                 <p class="post-wrap--date">2007 - 2011</p>
                                 <p class="post-wrap--desc">
                                     IV Language school 'Frederic Joliot-Curie', Varna. Primary language - french
@@ -222,6 +222,21 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12">
                         <h2 class="portfolio-sec--title">Portfolio</h2>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div id="portfolio-slider" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 owl-carousel">
+                        <div class="item">
+                            <div class="portfolio-wrap">
+
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="portfolio-wrap blue">
+                                
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -7,6 +7,7 @@
         wp_enqueue_script('jquery.js', get_template_directory_uri() . '/js/jquery.js');
         wp_enqueue_script('parallax.min.js', get_template_directory_uri() . '/js/parallax.min.js');
         wp_enqueue_script('jquery-ui.js', get_template_directory_uri() . '/js/jquery-ui.js');
+        wp_enqueue_script('owl-carousel', get_template_directory_uri() . '/js/owl.carousel.min.js');
         wp_enqueue_script('app.js', get_template_directory_uri() . '/js/app.js');
         
 

@@ -10,4 +10,15 @@
         font-family: 'source_sans_probold';
         margin-bottom: 48px;
     }
+
+    .portfolio-wrap {
+        width: 500px;
+        height: 500px;
+        margin: 0 auto;
+        background: red;
+    }
+
+    .portfolio-wrap.blue {
+        background: blue;
+    }
 }
