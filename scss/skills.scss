@@ -6,10 +6,6 @@
         padding-left: 0;
         padding-right: 0;
         margin-bottom: 50px;
-
-        @media only screen and (min-width: 992px) {
-            margin-bottom: 0;        
-        }
     }
 
     .skills-sec--title {
@@ -41,27 +37,14 @@
         li {
             display: inline-block;
             margin: 10px;
-            // width: 200px;
-            // height: 40px;
-            // line-height: 44px;
-            // position: relative;
-            // background: #f0f0f0;
-            // border-radius: 50px;
-            // text-align: left;
-            // padding-left: 80px;
-            // margin-bottom: 15px;
-            // font-family: 'source_sans_proregular';
             @include transition(0.3s);
 
             img {
                 display: block;
-                // top: 50%;
-                // left: 50px;
                 height: 64px;
                 width: auto;
                 @include gray-filter(100%);
                 @include transition(0.3s);
-                // transform: translateY(-50%);
 
                 &:hover {
                     @include gray-filter(0%);
@@ -70,6 +53,10 @@
 
             &:hover {
                 color: $primary-color;
+            }
+
+            @media only screen and (min-width: 901px) {
+                margin: 10px 20px;
             }
         }
     }

@@ -132,7 +132,7 @@
                     </div>
 
                     <div class="contact-wrap">
-                        <a href="#" class="contact-wrap--link">Contact Me</a>
+                        <a href="#contact-sec" class="contact-wrap--link">Contact Me</a>
                     </div>
 
                     <div id="scroll-down-btn" class="scroll-down-wrap">

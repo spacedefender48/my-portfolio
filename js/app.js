@@ -24,7 +24,7 @@
                 position = $($(this).attr("href")).offset().top;
 
                 $body.animate({
-                    scrollTop: (position - 30)
+                    scrollTop: (position - 10)
                 }, 500 );
                 
             } else if (href_link == '#') {

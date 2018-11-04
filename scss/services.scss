@@ -17,8 +17,8 @@
         background: #fff;
         @include border-radius(4px);
         @include box-shadow(0, 0, 10px, 0);
-        @include transition(0.5s);
-        margin: 0 auto;
+        @include transition(0.3s);
+        margin: 0 auto 30px;
         max-width: 330px;
 
 
@@ -32,49 +32,35 @@
         
         .service-wrap--title {
             text-align: center;
-            color: #666;
             font-size: 18px;
             font-family: 'source_sans_probold';            
             text-transform: uppercase;
             margin-bottom: 30px;
-            @include transition(0.3s);
+            // @include transition(0.3s);
 
-            &:hover {
-                color: $primary-color;
-            }
+            // &:hover {
+            //     color: $primary-color;
+            // }
         }
         
         .service-wrap--desc {
-            max-width: 200px;
+            max-width: 230px;
             margin: 0 auto;
             line-height: 20px;
             text-align: center;
             font-family: 'source_sans_proregular';  
             font-size: 14px;
             color: #666;
+            min-height: 80px;
+
+            @media only screen and (max-width: 991px) {
+                min-height: 60px;
+            }
         }
         
         &:hover {
             @include box-shadow(0, 0, 25px, 1px);
-        }
-    }
-
-    .frame {
-        @media only screen and (min-width: 769px) and (max-width: 991px) {
-
-            padding-bottom: 20px;
-
-            &:nth-child(3), &:nth-child(4) {
-                padding-bottom: 0;
-            }
-        }
-
-        @media only screen and (max-width: 768px) {
-            padding-bottom: 20px;
-
-            &:last-child {
-                padding-bottom: 0;
-            }
+            color: $primary-color;
         }
     }
 }

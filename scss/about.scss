@@ -14,7 +14,7 @@
 
     // Portrait image
     .portrait-wrap {
-        max-width: 350px;
+        max-width: 430px;
         border: 8px solid #fff;
         box-shadow: 0 0 30px rgba(0,0,0,.2);
         margin: 0 auto;
@@ -23,6 +23,64 @@
             display: block;
             width: 100%;
             height: auto;
+        }
+
+        @media only screen and (max-width: 991px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    .desc-wrap {
+        padding-top: 20px;
+
+        .desc-wrap--title {
+            letter-spacing: 1px;
+            color: #252525;
+            font-size: 35px;
+            font-family: 'source_sans_probold';
+            margin-bottom: 30px;
+        }
+
+        .desc-wrap--text {
+            font-size: 18px;
+            font-family: 'source_sans_proregular';            // text-transform: uppercase;
+            line-height: 22px;
+            text-align: justify;
+            margin-bottom: 10px;
+
+            &:nth-last-child(2) {
+                margin-bottom: 30px;
+            }
+        }
+
+        .desc-wrap--link-wrap {
+            .desc-wrap--link {
+                display: inline-block;
+                text-decoration: none;
+                outline: none;
+                padding: 0 40px;
+                color: #fff;
+                background: $primary-color;
+                transition: 0.3s;
+                border-radius: 4px;
+                text-transform: uppercase;
+                font-family: 'source_sans_proregular';
+                height: 45px;
+                line-height: 53px;
+                
+                &:hover {
+                    background: #21cff3;
+                }
+            }
+
+            @media only screen and (max-width: 991px) {
+                text-align: center;
+            }
+        }
+
+        @media only screen and (max-width: 991px) {
+            max-width: 700px;
+            margin: 0 auto;
         }
     }
 }
