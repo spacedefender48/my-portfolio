@@ -52,6 +52,14 @@
         line-height: 18px;
     }
 
+    label {
+        color: #fff;
+        font-family: 'source_sans_proregular';  
+        font-size: 14px;
+        display: block;
+        padding: 20px;
+    }
+
     .submit-btn {
         display: block;
         margin: 20px auto 0;
@@ -96,6 +104,13 @@
             height: 22px;
             padding: 0 3px;
             line-height: 24px;
+        }
+
+        input[type="checkbox"] {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
         }
     }
 }

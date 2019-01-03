@@ -176,6 +176,7 @@
         var $message_field = $('#message_field');
         var $message_error = $('#contact-form .error-text--message');
 
+        var $consent_checkbox = $('#contact-form #f_consent');
         var $submit_btn = $('.submit-btn');
 
         function checkName(isFocusSet = false) {
@@ -264,12 +265,31 @@
             }
         }
 
+        function checkConsent() {
+            var isConsentChecked = $consent_checkbox.is(':checked');
+
+            if (!isConsentChecked) {
+                $consent_checkbox.attr('title', '');
+                $consent_checkbox.tooltip({
+                    content: 'Please check the checkbox',
+                    hide: { effect: "fadeOut", duration: 500 }
+                });
+
+                $consent_checkbox.tooltip('open');
+                
+                setTimeout(function() {
+                    $consent_checkbox.tooltip('close');
+                }, 2000);
+            }
+
+            return isConsentChecked;
+        }
+
         function validateContactForm() {
-            var is_form_valid = checkName(true) && checkEmail(true) && checkSubject(true) && checkMessage(true);
+            var is_form_valid = checkName(true) && checkEmail(true) && checkSubject(true) && checkMessage(true) && checkConsent();
 
             return is_form_valid;
         }
-
 
         $name_field.on('input', function () {
             checkName();

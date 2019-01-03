@@ -31,6 +31,9 @@
                                 I am always open to new job opportunities. Feel free to check my CV below. 
                             </p>
 
+                            <a href="<?php echo get_page_link(43);?>">Privacy Policy</a>
+                            <a href="<?php echo get_page_link(43);?>">Privacy Policy</a>
+
                             <div class="desc-wrap--link-wrap">
                                 <a href="<?php echo wp_get_attachment_url( 4 ); ?>" class="desc-wrap--link">Download CV</a>
                             </div>
@@ -352,6 +355,13 @@
                                     <textarea name="f_message" placeholder="Your Message" class="field-area" id="message_field" required></textarea>
                                     <p class="error-text--message">REQUIRED</p>
                                 </div> 
+
+                                <div class="input-frame">
+                                    <input type="checkbox" name="f_consent" id="f_consent" required title="">
+                                    <label for="f_consent">
+                                        I consent to having this website store my submitted information so they can respond to my inquiry
+                                    </label>
+                                </div>
 
                                 <input type="submit" name="f_submit" value="Send Message" class="submit-btn">
 

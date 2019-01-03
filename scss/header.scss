@@ -83,6 +83,7 @@ header {
     float: left;
     margin-top: 15px;
     @include transition(0.3s);
+    height: 48px;
 
     a {
         display: block;

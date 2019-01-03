@@ -1,0 +1,83 @@
+#privacy-policy-sec {
+    padding: 60px 0;
+
+    .privacy-policy--title {
+        text-align: center;
+        letter-spacing: 1px;
+        color: #252525;
+        font-size: 38px;
+        font-family: 'source_sans_probold';
+        margin-bottom: 48px;
+    }
+
+
+    .privacy-policy--wrap {
+        max-width: 1000px;
+        margin: 0 auto;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 10px;
+
+        .section-list {
+            counter-reset: sectioncounter;
+    
+            .section {
+                counter-reset: unitcounter;
+                font-family: 'source_sans_probold';
+                margin-bottom: 40px;
+                
+    
+                &:before {
+                    content: counter(sectioncounter, DECIMAL) ". ";
+                    counter-increment: sectioncounter;
+                }
+
+                .unit-list {
+                    padding-top: 15px;
+                    padding-left: 30px;
+                    font-family: 'source_sans_proregular';
+
+                    .unit {
+                        margin-bottom: 15px;
+                        padding-left: 45px;
+                        position: relative;
+                        counter-reset: loweralphacounter;
+
+                
+                        &:before {
+                            content: counter(sectioncounter) "." counter(unitcounter, DECIMAL) ". ";
+                            counter-increment: unitcounter;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                        }
+
+                        .alpha-list {
+                            padding: 15px 0;
+
+                            .alpha {
+                                padding-left: 35px;
+                                margin-bottom: 15px;
+                                position: relative;
+
+                                &:before {
+                                    content: "(" counter(loweralphacounter, lower-alpha) ")";
+                                    counter-increment: loweralphacounter;
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                strong {
+                    font-weight: bolder;
+                }
+            }
+
+            
+        }
+    }
+}
