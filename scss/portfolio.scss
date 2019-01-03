@@ -1,6 +1,7 @@
 #portfolio-sec {
     background: #f0f0f0;
     padding: 60px 0;
+    position: relative;
 
     .portfolio-sec--title {
         text-align: center;
@@ -8,7 +9,7 @@
         color: #252525;
         font-size: 38px;
         font-family: 'source_sans_probold';
-        margin-bottom: 48px;
+        margin-bottom: 30px;
     }
 
     .portfolio-wrap {
@@ -20,5 +21,60 @@
 
     .portfolio-wrap.blue {
         background: blue;
+    }
+}
+
+// Slider styles 
+#portfolio-slider {
+    .owl-nav {
+        .owl-prev {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto auto auto 30px;
+            font-size: 16px;
+            text-align: center;
+            width: 40px;
+            height: 40px;
+            line-height: 42px;
+            background: $primary-color;
+            border-radius: 2px;
+            color: #fff;
+            opacity: 0;
+            @include transition(0.3s);
+        }
+
+        .owl-next {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto 30px auto auto;
+            font-size: 16px;
+            text-align: center;
+            width: 40px;
+            height: 40px;
+            line-height: 42px;
+            background: $primary-color;
+            border-radius: 2px;
+            color: #fff;
+            opacity: 0;
+            @include transition(0.3s);
+        }
+    }
+
+    &:hover {
+        .owl-prev {
+            margin-left: 10px;
+            opacity: 1
+        }
+
+        .owl-next {
+            margin-right: 10px;
+            opacity: 1;
+        }
     }
 }

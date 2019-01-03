@@ -131,6 +131,10 @@
 
         $win.on('resize', function(){
             calculate_active_header_positions();
+
+            if ($main_nav.hasClass('canvas-menu-open')) {
+                $main_nav.removeClass('canvas-menu-open');
+            }
         });
 
         
@@ -377,6 +381,7 @@
         portfolio_slider.owlCarousel({
             loop:true,
             nav:true,
+            navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
             items: 1
         });
 

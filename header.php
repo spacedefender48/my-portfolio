@@ -21,7 +21,7 @@
         <nav id="main-nav">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 clear">
+                    <div class="col-3 clear">
 
                         <div id="logo">
                             <a href="#" title="Logo">
@@ -32,7 +32,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-9 col-md-9 col-sm-9 hidden-xs clear">
+                    <div class="col-md-9 d-xs-none d-sm-none d-md-block clear" id="main-menu-nav">
 
                         <ul class="clear">
                             <li>
@@ -59,7 +59,7 @@
                         </ul>
                     </div>
 
-                    <div class="hidden-lg hidden-md col-sm-9 col-xs-9 canvas-btn--wrap">
+                    <div class="d-lg-none col-9 canvas-btn--wrap">
                         <div class="canvas-btn">
                             <div class="top"></div>
                             <div class="middle"></div>
@@ -68,7 +68,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="hidden-lg hidden-md col-sm-12 col-xs-12">
+                    <div class="d-lg-none col-12">
                         <div class="canvas-menu--wrap">
                             <ul class="canvas-menu">
                                 <li>
@@ -104,11 +104,7 @@
 
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-12">
-                    <!-- <div class="portrait-frame">
-                        <img src="<?php //bloginfo('template_url') ?>/img/portrait.jpg" alt="Plamen's portrait">
-                    </div> -->
-
+                <div class="col-12">
                     <div class="details-wrap">
                         <p class="details-wrap--intro">Hi This is</p>
                         <h1 class="details-wrap--name">Plamen Kolarov</h1>

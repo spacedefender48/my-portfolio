@@ -362,9 +362,17 @@ header {
     border-radius: 2px;
     cursor: pointer;
     text-align: center;
+    z-index: 100;
 
     svg {
         height: 40px;
         color: #fff;
+    }
+}
+
+
+#main-menu-nav {
+    @media only screen and (max-width: 852px) {
+        display: none !important; 
     }
 }

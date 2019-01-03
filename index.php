@@ -6,19 +6,19 @@
         <section id="about-sec" class="about-wrap">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-12">
                         <h2 class="title">About Me</h2>
                     </div>
                 </div>
             
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 animation-element slide-left">
+                    <div class="col-md-6 col-xs-12 animation-element slide-left">
                         <div class="portrait-wrap">
                             <img src="<?php bloginfo('template_url') ?>/img/portrait.jpg" alt="Portrait Image">
                         </div>
                     </div>
 
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 animation-element slide-right">
+                    <div class="col-md-6 col-xs-12 animation-element slide-right">
                         <div class="desc-wrap">
                             <h3 class="desc-wrap--title">Hi guys!</h3>
                             <p class="desc-wrap--text">
@@ -43,13 +43,13 @@
         <section id="services-sec" class="services-sec">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-12">
                         <h2 class="title">What I do</h2>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 animation-element slide-left">
+                    <div class="col-lg-3 col-sm-6 col-xs-12 animation-element slide-left">
                         <div class="service-wrap">
                             <div class="service-wrap--icon">
                                 <i class="fas fa-globe"></i>
@@ -63,7 +63,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 animation-element slide-left">
+                    <div class="col-lg-3 col-sm-6 col-xs-12 animation-element slide-left">
                         <div class="service-wrap">
                             <div class="service-wrap--icon">
                                 <i class="fab fa-wordpress"></i>
@@ -77,7 +77,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 animation-element slide-right">
+                    <div class="col-lg-3 col-sm-6 col-xs-12 animation-element slide-right">
                         <div class="service-wrap">
                             <div class="service-wrap--icon">
                                 <i class="fas fa-layer-group"></i>
@@ -91,7 +91,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 animation-element slide-right">
+                    <div class="col-lg-3 col-sm-6 col-xs-12 animation-element slide-right">
                         <div class="service-wrap">
                             <div class="service-wrap--icon">
                                 <i class="fas fa-mobile-alt"></i>
@@ -105,7 +105,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 animation-element slide-left">
+                    <div class="col-lg-3 col-sm-6 col-xs-12 animation-element slide-left">
                         <div class="service-wrap">
                             <div class="service-wrap--icon">
                                 <i class="fas fa-cogs"></i>
@@ -119,7 +119,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 animation-element slide-left">
+                    <div class="col-lg-3 col-sm-6 col-xs-12 animation-element slide-left">
                         <div class="service-wrap">
                             <div class="service-wrap--icon">
                                 <i class="fas fa-code"></i>
@@ -133,7 +133,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 animation-element slide-right">
+                    <div class="col-lg-3 col-sm-6 col-xs-12 animation-element slide-right">
                         <div class="service-wrap">
                             <div class="service-wrap--icon">
                                 <i class="fas fa-user-friends"></i>
@@ -147,7 +147,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 animation-element slide-right">
+                    <div class="col-lg-3 col-sm-6 col-xs-12 animation-element slide-right">
                         <div class="service-wrap">
                             <div class="service-wrap--icon">
                                 <i class="fas fa-comments"></i>
@@ -168,7 +168,7 @@
         <section id="history-sec" class="history-sec">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-frame">
+                    <div class="col-md-6 col-xs-12 col-frame">
                         <div class="history-wrap">
                             <div class="title-wrap">
                                 <div class="title-wrap--icon">
@@ -195,7 +195,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-frame">
+                    <div class="col-md-6 col-xs-12 col-frame">
                         <div class="history-wrap">
                             <div class="title-wrap">
                                 <div class="title-wrap--icon">
@@ -220,13 +220,13 @@
         <section id="portfolio-sec">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-12 col-md-12">
+                    <div class="col-12">
                         <h2 class="portfolio-sec--title">Portfolio</h2>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div id="portfolio-slider" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 owl-carousel">
+                    <div id="portfolio-slider" class="col-12 owl-carousel">
                         <div class="item">
                             <div class="portfolio-wrap">
 
@@ -245,13 +245,13 @@
         <section id="skills-sec" class="skills-sec">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-12">
                         <h2 class="skills-sec--title">My skills</h2>
                     </div>
                 </div>  
 
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 category-wrap">
+                    <div class="col-sm-6 col-12 category-wrap">
                         <h3 class="skills-title">Front-end</h3>
                         <ul class="skills-list">
                             <li>
@@ -269,7 +269,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 category-wrap">
+                    <div class="col-sm-6 col-12 category-wrap">
                         <h3 class="skills-title">Back-end</h3>
                         <ul class="skills-list">
                             <li>
@@ -281,7 +281,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 category-wrap">
+                    <div class="col-sm-6 col-12 category-wrap">
                         <h3 class="skills-title">Frameworks</h3>
                         <ul class="skills-list">
                             <li>
@@ -296,7 +296,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 category-wrap">
+                    <div class="col-sm-6 col-12 category-wrap">
                         <h3 class="skills-title">Tools</h3>
                         <ul class="skills-list">
                             <li>
@@ -315,19 +315,19 @@
             </div>
         </section>
 
-        <section class="contact-form-wrap" id="contact-sec" data-parallax="scroll" data-image-src="<?php bloginfo('template_url') ?>/img/bg.jpg">
+        <section class="contact-form-wrap" id="contact-sec" data-parasssllax="scroll" data-image-src="<?php bloginfo('template_url') ?>/img/bg.jpg">
 
             <div class="overlay-background"></div>
 
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-12">
                         <h2 class="contact-form-wrap--title">Get in touch</h2>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-12">
                         <div class="form-wrap">
                             <form action="#" method="GET" id="contact-form">
                                 <div class="input-frame">
