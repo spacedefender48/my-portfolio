@@ -229,12 +229,36 @@
                     <div id="portfolio-slider" class="col-12 owl-carousel">
                         <div class="item">
                             <div class="portfolio-wrap">
+                                <a href="<?php echo home_url();?>" class="portfolio-image" > 
+                                    <img src="<?php bloginfo('template_url')?>/img/portfolio-site.png" alt="My portfolio site">
+                                </a>
 
+                                <div class="portfolio-details">
+                                    <h4 class="portfolio-details--title">
+                                        <a href="<?php echo home_url(); ?>">My portfolio site</a>
+                                    </h4>
+
+                                    <p class="portfolio-details--desc">
+                                        My portfolio site. <br>Technologies used: HTML5, CSS3, Bootstrap, Sass, JavaScript, jQuery, jQuery UI
+                                    </p>
+                                </div>
                             </div>
                         </div>
                         <div class="item">
-                            <div class="portfolio-wrap blue">
-                                
+                            <div class="portfolio-wrap">
+                                <a href="<?php echo home_url();?>" class="portfolio-image" > 
+                                    <img src="<?php bloginfo('template_url')?>/img/dnda-site.png" alt="DNDA blog">
+                                </a>
+
+                                <div class="portfolio-details">
+                                    <h4 class="portfolio-details--title">
+                                        <a href="<?php echo home_url(); ?>">DNDA blog</a>
+                                    </h4>
+
+                                    <p class="portfolio-details--desc">
+                                        Blog site. <br>Technologies used: WordPress, PHP, HTML5, CSS3, Bootstrap, Sass, JavaScript, jQuery 
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>

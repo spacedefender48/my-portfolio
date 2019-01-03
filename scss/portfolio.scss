@@ -13,15 +13,77 @@
     }
 
     .portfolio-wrap {
-        width: 500px;
-        height: 500px;
+        max-width: 800px;
+        height: 400px;
         margin: 0 auto;
-        background: red;
+        background: #000;
+        overflow: hidden;
+        position: relative;
+
+        .portfolio-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            z-index: 1;
+            height: 100%;
+            text-decoration: none;
+
+            img {
+                display: block;
+                height: 100%;
+                width: auto;
+            }
+        }
+
+        .portfolio-details {
+            height: 200px;
+            background: #fff;
+            margin-top: 400px;
+            @include transition(0.3s);
+            position: relative;
+            z-index: 2;
+            padding: 30px 0;
+            
+            .portfolio-details--title {
+                text-align: center;
+                letter-spacing: 1px;
+                color: #252525;
+                font-size: 25px;
+                font-family: 'source_sans_probold';
+                margin-bottom: 40px;
+
+                a {
+                    text-decoration: none;
+                    color: #252525;
+                    @include transition(0.3s);
+
+                    &:hover {
+                        color: $primary-color;
+                    }
+                }
+            }
+
+            .portfolio-details--desc {
+                line-height: 24px;
+                text-align: center;
+                font-family: 'source_sans_proregular';
+                font-size: 17px;
+                color: #666;
+                padding: 0 30px;
+                max-width: 600px;
+                margin: 0 auto;
+            }
+        }
+
+        &:hover {
+            .portfolio-details {
+                margin-top: 200px;
+            }
+        }
     }
 
-    .portfolio-wrap.blue {
-        background: blue;
-    }
 }
 
 // Slider styles 

@@ -12916,12 +12916,63 @@ header {
     font-family: 'source_sans_probold';
     margin-bottom: 30px; }
   #portfolio-sec .portfolio-wrap {
-    width: 500px;
-    height: 500px;
+    max-width: 800px;
+    height: 400px;
     margin: 0 auto;
-    background: red; }
-  #portfolio-sec .portfolio-wrap.blue {
-    background: blue; }
+    background: #000;
+    overflow: hidden;
+    position: relative; }
+    #portfolio-sec .portfolio-wrap .portfolio-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      z-index: 1;
+      height: 100%;
+      text-decoration: none; }
+      #portfolio-sec .portfolio-wrap .portfolio-image img {
+        display: block;
+        height: 100%;
+        width: auto; }
+    #portfolio-sec .portfolio-wrap .portfolio-details {
+      height: 200px;
+      background: #fff;
+      margin-top: 400px;
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -ms-transition: 0.3s;
+      transition: 0.3s;
+      position: relative;
+      z-index: 2;
+      padding: 30px 0; }
+      #portfolio-sec .portfolio-wrap .portfolio-details .portfolio-details--title {
+        text-align: center;
+        letter-spacing: 1px;
+        color: #252525;
+        font-size: 25px;
+        font-family: 'source_sans_probold';
+        margin-bottom: 40px; }
+        #portfolio-sec .portfolio-wrap .portfolio-details .portfolio-details--title a {
+          text-decoration: none;
+          color: #252525;
+          -webkit-transition: 0.3s;
+          -moz-transition: 0.3s;
+          -ms-transition: 0.3s;
+          transition: 0.3s; }
+          #portfolio-sec .portfolio-wrap .portfolio-details .portfolio-details--title a:hover {
+            color: #00b4d9; }
+      #portfolio-sec .portfolio-wrap .portfolio-details .portfolio-details--desc {
+        line-height: 24px;
+        text-align: center;
+        font-family: 'source_sans_proregular';
+        font-size: 17px;
+        color: #666;
+        padding: 0 30px;
+        max-width: 600px;
+        margin: 0 auto; }
+    #portfolio-sec .portfolio-wrap:hover .portfolio-details {
+      margin-top: 200px; }
 
 #portfolio-slider .owl-nav .owl-prev {
   position: absolute;
