@@ -58,6 +58,15 @@
         font-size: 14px;
         display: block;
         padding: 20px;
+
+        a {
+            color: #00b4d9;
+            @include transition(0.3s);
+
+            &:hover {
+                color: #008ba8;
+            }
+        }
     }
 
     .submit-btn {

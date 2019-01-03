@@ -13073,6 +13073,14 @@ header {
   font-size: 14px;
   display: block;
   padding: 20px; }
+  #contact-form label a {
+    color: #00b4d9;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    transition: 0.3s; }
+    #contact-form label a:hover {
+      color: #008ba8; }
 #contact-form .submit-btn {
   display: block;
   margin: 20px auto 0;
@@ -13143,7 +13151,8 @@ footer {
     line-height: 22px;
     margin-bottom: 10px; }
     #privacy-policy-sec .privacy-policy--wrap .section-list {
-      counter-reset: sectioncounter; }
+      counter-reset: sectioncounter;
+      padding: 0 15px; }
       #privacy-policy-sec .privacy-policy--wrap .section-list .section {
         counter-reset: unitcounter;
         font-family: 'source_sans_probold';

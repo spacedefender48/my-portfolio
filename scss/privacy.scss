@@ -20,6 +20,7 @@
 
         .section-list {
             counter-reset: sectioncounter;
+            padding: 0 15px;
     
             .section {
                 counter-reset: unitcounter;
